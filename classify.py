@@ -82,8 +82,8 @@ dropout = 0.2
 is_attn = False
 
 ## Read data
-x_path = 'Results/FeatureVector/segment200_40/sup_ratio/feature_mat_dist_dl_shape_offset_o_2_0.7.pkl'
-y_path = 'Data/patient_labels_720.pkl'
+x_path = '' ## (N, T, D)
+y_path = '' ## (N,)
 x = pickle.load(open(x_path, 'rb'))
 y = pickle.load(open(y_path, 'rb'))
 print("x.shape: {}, y.shape: {}".format(x.shape, y.shape))
